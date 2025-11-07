@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopeeExtensionPro Dashboard</title>
+  <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+  <div class="header">
+    <h1>ShopeeExtensionPro Dashboard</h1>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="history">History</button>
+    <button class="tab" data-tab="optimizer">Optimizer</button>
+    <button class="tab" data-tab="supplier">Supplier Sync</button>
+    <button class="tab" data-tab="trends">Trend Sniper</button>
+    <button class="tab" data-tab="export">Export Manager</button>
+  </div>
+
+  <div class="tab-content">
+    <!-- History Tab -->
+    <div id="history" class="tab-pane active">
+      <h2>Scraped Products</h2>
+      <div id="history-list" class="list-container">
+        <p>No products scraped yet.</p>
+      </div>
+    </div>
+
+    <!-- Optimizer Tab -->
+    <div id="optimizer" class="tab-pane">
+      <h2>AI Title Optimizer</h2>
+      <div class="form-group">
+        <label for="product-title">Current Title:</label>
+        <input type="text" id="product-title" placeholder="Enter product title">
+        <button id="optimize-title-btn" class="btn primary">Optimize</button>
+        <div id="optimized-result" class="result-box"></div>
+      </div>
+    </div>
+
+    <!-- Supplier Tab -->
+    <div id="supplier" class="tab-pane">
+      <h2>Supplier Sync</h2>
+      <div class="form-group">
+        <label for="supplier-url">Supplier Data URL:</label>
+        <input type="text" id="supplier-url" placeholder="Enter supplier API/CSV URL">
+        <button id="sync-supplier-btn" class="btn primary">Sync Now</button>
+        <div id="sync-result" class="result-box"></div>
+      </div>
+    </div>
+
+    <!-- Trends Tab -->
+    <div id="trends" class="tab-pane">
+      <h2>Trend Sniper</h2>
+      <div class="form-group">
+        <label for="category-select">Select Category:</label>
+        <select id="category-select">
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+          <option value="home">Home & Living</option>
+          <option value="beauty">Beauty</option>
+        </select>
+        <button id="find-trends-btn" class="btn primary">Find Trends</button>
+        <div id="trends-result" class="result-box"></div>
+      </div>
+    </div>
+
+    <!-- Export Tab -->
+    <div id="export" class="tab-pane">
+      <h2>Export Manager</h2>
+      <div class="export-options">
+        <button class="export-btn" data-format="json">Export as JSON</button>
+        <button class="export-btn" data-format="csv">Export as CSV</button>
+        <button class="export-btn" data-format="html">Export as HTML</button>
+        <button class="export-btn" data-format="whatsapp">Export for WhatsApp</button>
+      </div>
+      <div id="export-result" class="result-box"></div>
+    </div>
+  </div>
+
+  <script src="scripts/selector-map.js"></script>
+  <script src="scripts/shopee-scraper.js"></script>
+  <script src="scripts/ai-title-optimizer.js"></script>
+  <script src="scripts/trend-sniper.js"></script>
+  <script src="scripts/stock-checker.js"></script>
+  <script src="scripts/post-rebuilder.js"></script>
+  <script src="analytics/index.js"></script>
+  <script src="utils/helpers.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

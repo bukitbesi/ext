@@ -1,0 +1,17 @@
+{
+  "en": [
+    "hot", "trending", "new", "best", "sale", "discount", 
+    "eco friendly", "wireless", "smart", "organic", 
+    "vintage", "luxury", "trendy", "premium", "exclusive"
+  ],
+  "my": [
+    "panas", "tren", "baru", "terbaik", "jualan", "diskaun",
+    "mesra alam", "wayarles", "pintar", "organik",
+    "vintaj", "mewah", "trendi", "premium", "eksklusif"
+  ],
+  "id": [
+    "panas", "tren", "baru", "terbaik", "diskon", "murah",
+    "ramah lingkungan", "nirkabel", "cerdas", "organik",
+    "vintage", "mewah", "trendy", "premium", "eksklusif"
+  ]
+}

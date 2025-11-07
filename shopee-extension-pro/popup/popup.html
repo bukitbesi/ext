@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopeeExtensionPro</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="assets/icons/icon48.png" alt="Logo" class="logo">
+    <h1>ShopeeExtensionPro</h1>
+  </div>
+
+  <div class="product-preview">
+    <div id="preview-content">
+      <p>No product data. Visit a Shopee product page and click "Scrape".</p>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="scrape-btn" class="btn primary">Scrape Product</button>
+    <button id="optimize-btn" class="btn secondary">Optimize Title</button>
+    <button id="export-btn" class="btn tertiary">Export Data</button>
+    <button id="dashboard-btn" class="btn dashboard">Open Dashboard</button>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <script src="scripts/selector-map.js"></script>
+  <script src="scripts/shopee-scraper.js"></script>
+  <script src="scripts/ai-title-optimizer.js"></script>
+  <script src="scripts/post-rebuilder.js"></script>
+  <script src="utils/helpers.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
