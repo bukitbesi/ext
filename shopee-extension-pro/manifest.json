@@ -5,21 +5,33 @@
   "description": "AI SuperTool for Shopee Sellers - Built for Sellers. Powered by AI. Designed to Scale Shopee Profits.",
   "icons": {
     "16": "assets/icons/icon16.png",
-    "32": "icons/icon32.png",
+    "32": "assets/icons/icon32.png",
     "48": "assets/icons/icon48.png",
     "128": "assets/icons/icon128.png"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/popup.html",
     "default_title": "ShopeeExtensionPro"
   },
   "background": {
     "service_worker": "background.js"
   },
-    "permissions": [
+  "permissions": [
     "storage",
     "activeTab",
     "scripting"
+  ],
+  "host_permissions": [
+    "https://shopee.co.id/*",
+    "https://shopee.com.my/*",
+    "https://shopee.sg/*",
+    "https://shopee.co.th/*",
+    "https://shopee.ph/*",
+    "https://shopee.vn/*",
+    "https://shopee.com.br/*",
+    "https://shopee.cl/*",
+    "https://shopee.com.mx/*",
+    "https://shopee.com.co/*"
   ],
   "content_scripts": [
     {
@@ -42,21 +54,5 @@
       ],
       "run_at": "document_idle"
     }
-  ],
-    "action": {
-    "default_popup": "popup/popup.html"
-  }
-}
-  "host_permissions": [
-    "https://shopee.co.id/*",
-    "https://shopee.com.my/*",
-    "https://shopee.sg/*",
-    "https://shopee.co.th/*",
-    "https://shopee.ph/*",
-    "https://shopee.vn/*",
-    "https://shopee.com.br/*",
-    "https://shopee.cl/*",
-    "https://shopee.com.mx/*",
-    "https://shopee.com.co/*"
   ]
 }
